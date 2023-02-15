@@ -1,0 +1,31 @@
+body{
+  background-color: black;
+  color: white;
+}
+h1{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin-left:-320px;
+  margin-top:-40px;
+  font-size: 100px;
+
+  background: rgb(0,236,255);
+  background: linear-gradient(90deg, rgba(0,236,255,1) 0%, rgba(208,114,196,1) 44%, rgba(78,255,0,1) 100%);
+  background-size: 300% 300%;
+  animation: color 4s ease-in-out infinite;
+}
+@keyframes color {
+  0%{
+    background-position: 0%;
+    color: rgb(0, 0, 0);
+  }
+  50%{
+    background-position: 100%;
+    color: rgb(53, 50, 50);
+  }
+  100%{
+    background-position: 0%;
+    color: rgb(0, 0, 0);
+  }
+}
